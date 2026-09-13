@@ -1,0 +1,26 @@
+{
+  "name": "gemini-test",
+  "version": "1.0.0",
+  "description": "Teste rápido com Gemini 2.5 Flash-Lite",
+  "type": "module",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js",
+    "analyze": "node analyze-videos.js",
+    "server": "node server.js",
+    "web:dev": "cd web && npm run dev",
+    "web:build": "cd web && npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run web:dev\""
+  },
+  "dependencies": {
+    "@google/generative-ai": "latest",
+    "dotenv": "latest",
+    "youtube-transcript": "latest",
+    "axios": "latest",
+    "express": "latest",
+    "cors": "latest"
+  },
+  "devDependencies": {
+    "concurrently": "latest"
+  }
+}

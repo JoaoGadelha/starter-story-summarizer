@@ -1,0 +1,180 @@
+.strategy-analysis {
+  width: 100%;
+}
+
+.analysis-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.analysis-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.analysis-card h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Chart */
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chart-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.chart-label {
+  min-width: 120px;
+  font-weight: 600;
+  color: #333;
+}
+
+.chart-bar-container {
+  flex: 1;
+  background: #eee;
+  border-radius: 8px;
+  height: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart-bar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  min-width: 30px;
+  transition: all 0.3s ease;
+}
+
+.chart-value {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Insights */
+.insights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.insight-item {
+  display: flex;
+  gap: 12px;
+  padding: 15px;
+  background: #f8f9ff;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.insight-icon {
+  font-size: 24px;
+  min-width: 30px;
+}
+
+.insight-item h3 {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.insight-item p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Patterns */
+.patterns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.pattern {
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-left: 4px solid #667eea;
+  border-radius: 8px;
+}
+
+.pattern h3 {
+  color: #667eea;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.pattern p {
+  color: #555;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Checklist */
+.checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+.check-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.check-item span {
+  color: #333;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .analysis-container {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-card {
+    padding: 20px;
+  }
+
+  .insights {
+    grid-template-columns: 1fr;
+  }
+
+  .patterns {
+    grid-template-columns: 1fr;
+  }
+
+  .checklist {
+    grid-template-columns: 1fr;
+  }
+}

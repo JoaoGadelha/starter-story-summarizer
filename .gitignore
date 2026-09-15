@@ -7,8 +7,8 @@ web/node_modules/
 dist/
 web/dist/
 build/
-analises_videos/
 .vscode/
 .idea/
 *.swp
 *.swo
+.vercel
